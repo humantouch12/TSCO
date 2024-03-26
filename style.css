@@ -1,0 +1,438 @@
+/*------------------------------- constant -------------------------------------------*/
+@font-face {
+    font-family:heading;
+    src: url(fonts/Lora-Regular.ttf);
+  }
+
+  @font-face {
+    font-family:write-up;
+    src: url(fonts/CormorantGaramond-Regular.ttf);
+  }
+
+  .relevant{
+   
+    color: hsl(145, 63%, 42%);
+    color: hsl(0, 0%, 40%);
+    color:  hsl(160, 100%, 98%);
+}
+
+/*------------------------------- body-------------------------------------------*/
+body{
+    padding:0;
+          margin:0;
+          width:100%;
+          height:100%;
+       }
+  /*------------------------------- Navigation section ------------------------------------------*/
+  .onscroll-function{
+    display:flex;
+    width:100%;
+    background-color:hsl(160, 100%, 98%);
+    justify-content: center;
+    
+  
+  }
+  .pc-nav-container{
+    background-color:hsl(160, 100%, 98%);
+    position:fixed ;
+    width: 100%;
+    z-index: 999;
+    
+   
+  }
+          .pc-header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 2%;
+            
+          }
+          .logo-div{
+            margin-right: auto;
+          }
+          .logo{
+            width: 150px;
+            cursor:pointer;
+            margin-right: auto;
+          }
+          
+          
+          li,a,button{
+            text-transform: uppercase;
+            font-family: write-up;
+            font-weight:bold;
+            font-size: 16px;
+            text-decoration: none;
+            letter-spacing: 2px;
+          
+            
+            
+          }
+          .text-effect,.effect{   line-height: 1.2em;
+            color: #ffffff00;
+            text-shadow:0 0 hsl(0, 0%, 40%), 0 1.2em hsl(145, 63%, 42%) ;
+            overflow: hidden;
+            transition: 0.3s;}
+        
+          
+          
+          .nav-links{
+            list-style: none;
+          }
+          .nav-links li{
+            display: inline-block;
+            padding: 0px 10px;
+          }
+          
+          .nav-links li a {
+            
+            transition:  0.3s;
+          
+          }
+          .text-effect .effect:hover{
+            font-weight: bolder;
+            text-shadow: 0 -1.2em #000, 0 0 hsl(145, 63%, 42%);
+  
+          }
+          button{
+            color: rgb(255, 255, 255);
+            padding: 9px 25px;
+            background-color:hsl(145, 63%, 42%);
+            border: none;
+            border-radius: 10px;
+            cursor:pointer ;
+            transition: all 0.3s ease 0s;
+          
+          }
+          
+          button:hover{
+            color: rgb(255, 255, 255);
+            background-color: hsl(0, 0%, 40%);
+          }
+
+           /*-------------------------------top  section ------------------------------------------*/
+           .first-container{
+            background-color: hsl(160, 100%, 98%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        
+           }
+           .content-container{
+            margin-top: 180px;
+            margin-bottom: 100px;
+            display: grid;
+            grid-template-columns: repeat(2,0fr);
+            justify-content: center;
+            gap:100px;
+            width: 100%;
+           }
+           .write-up-div{
+            width: 500px;
+           
+           }
+
+
+
+           .write-up-div h6 {
+            font-size: 16px;
+            font-family: write-up;
+            text-transform: capitalize;
+            margin-bottom: 0px;
+            color:hsl(145, 63%, 42%) ;
+           }
+
+.write-up-div h2{
+  font-size: 50px;
+  font-family: heading;
+text-transform: capitalize;
+letter-spacing: 1px;
+font-weight: bolder;
+
+}
+.write-up-div h5{
+  font-size: 18px;
+  font-family: write-up;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+           .top-image-div{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content:center ;
+            width: 550px;
+            height: 550px;
+           overflow: hidden;
+            border-radius: 90%;
+            z-index: 0;
+           }
+           .top-image-div1{
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            
+            border-radius: 90%;
+            z-index: 9;
+            overflow: hidden;
+           }
+.image-sec{
+  min-width: 100%;
+min-height: 100%;
+flex-shrink: 10%;
+width: ;
+opacity: 0.7;
+
+}
+.image-sec1{
+  min-width: 100%;
+min-height: 100%;
+flex-shrink: 30%;
+width: ;
+
+
+
+}
+
+
+         /*-------------------------------second  section ------------------------------------------*/
+
+
+.second-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+}
+
+.content-container2{
+  display: grid;
+  grid-template-columns: repeat(2,0fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.image-section{
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(2,0fr);
+  justify-content: center;
+  width: 600px;
+  
+}
+
+.image1-div{
+
+  width: 450px;
+  height:450px;
+  border-radius:30px 30px 40px 50px ;
+  border: 10px solid white;
+  overflow: hidden;
+  transform: skew(-10deg) skewY(5deg);
+  box-shadow: 2px 2px 20px black;
+}
+.image2-div{
+  position: absolute;
+  width: 250px;
+  height:250px;
+  border-radius:30px 30px 40px 50px ;
+  border: 10px solid white;
+  overflow: hidden;
+  transform: skew(-10deg) ;
+  box-shadow: 2px 2px 20px black;
+  margin-top: 160px;
+  margin-left: 280px;
+}
+.image1{
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 10%;
+  width: ;
+  
+}
+.second-write-up-div{
+  width: 500px;
+}
+.second-write-up-div h2{
+  font-family: heading;
+  text-transform: capitalize;
+  font-size:40px ;
+  font-weight: bold;
+}
+.second-write-up-div h5{
+font-family: write-up;
+font-size: 18px;
+color:hsl(0, 0%, 40%) ;
+font-weight: bold;
+}
+.list-div{
+  font-family: write-up;
+font-size: 18px;
+color:hsl(0, 0%, 40%) ;
+font-weight: bold;
+
+}
+.list-div span{
+  display: flex;
+  padding: 10px;
+  
+}
+.bullet{
+  width: 20px;
+  height: 20px;
+  background-color: hsl(145, 63%, 42%);
+  border-radius: 50px;
+margin-right: 10px;
+}
+
+.grid1{
+display: grid;
+grid-template-columns:repeat(2,0fr);
+width: 100%;
+gap: 0px;
+margin-top: 20px;
+justify-content: center;
+align-items: center;
+}
+.grid1 div{
+  width: 200px;
+  display: flex;
+
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+.grid1 div h4{
+color: hsl(145, 63%, 42%);
+font-family: heading;
+font-size: 18px;
+text-transform: capitalize;
+}
+.grid1 div button{
+  height: 40px;
+}
+
+
+ /*-------------------------------Third section ------------------------------------------*/
+
+ .third-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+ }
+ .third-container-content div{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-top: -40px;
+ }
+ .third-container-content div h5{
+  color: hsl(145, 63%, 42%);
+  font-family: write-up;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+ }
+
+ .third-container-content div h2{
+font-family: heading;
+font-size: 30px;
+text-transform: capitalize;
+ }
+
+ .third-container-content div h6{
+  width: 50%;
+  font-family: write-up;
+  font-size: 18px;
+  color:hsl(0, 0%, 40%) ;
+  font-weight: bold;
+
+ }
+ /*-------------------------------Third section ------------------------------------------*/
+ .forth-bg-link{
+  text-decoration: none;
+ }
+
+ .forth-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+ }
+ .forth-container-content{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+  grid-template-columns: repeat(2,0fr);
+ }
+
+ .forth-bg{
+  width: 450px;
+ 
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+  height: 250px;
+  overflow: hidden;
+
+ }
+ .forth-bg h4{
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: heading;
+  letter-spacing: 1px;
+ }
+ .grid2{
+  display: grid;
+  grid-template-columns: repeat(2,0fr);
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+
+ }
+ .grid2-icon{
+  width: 110px;
+ }
+ .forth-container-write-up{
+  width: 200px;
+  font-size: 13px;
+  font-family: write-up;
+  font-weight:bold ;
+  letter-spacing: 1px;
+ }
+ .forth-bg h5{
+  font-size:18px ;
+  display: flex;
+  justify-content: center;
+  font-family: write-up;
+  color:hsl(145, 63%, 42%) ;
+ 
+
+ }
+.forth-bg-link{
+
+  text-transform:inherit;
+  font-family: write-up;
+  font-weight:bold;
+ 
+  text-decoration:inherit;
+  letter-spacing: 1px;
+
+
+}
+
+
+}
